@@ -17,5 +17,12 @@ router.get('/about', (req, res) => {
     };
     res.render("about", { locals })
 })
+router.get('/contact', (req, res) => {
+    var locals = {
+        title: 'contact',
+        description: 'informacion de contacto'
+    };
+    res.render("contact", { locals })
+})
 
 module.exports = router
